@@ -13,4 +13,6 @@ class Diabetes(models.Model):
     Bmi_val=models.IntegerField(null=True,blank=True)
     Diabetes_Pedigree_Function=models.IntegerField(null=True,blank=True)
     Age=models.IntegerField(null=True,blank=True)
+
     Result=models.CharField(max_length=100,null=True,blank=True)
+    pub_date=models.DateTimeField(auto_now_add=True)

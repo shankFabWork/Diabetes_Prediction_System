@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="{% static 'css/nav.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
-
     {% block head  %}
     {% endblock %}
     
@@ -26,15 +25,18 @@
 </head>
 <body>
     {% include './partials/navbar.html' %}
-    
-    {% if messages %}
-        {% for i in messages %}
-            <div class="alert alert-{{i.tags}}" style='text-align: center;'>
-                {{i.text}}
-            </div>
-        {% endfor %}
-    {% endif %}
+    {% if is_first_time == 1 %}
+        {% if messages %}
+            {% for i in messages %}
+                    
+               <div class="alert alert-{{i.tags}}" style='text-align: center;font-weight:900;font-size:30px;'>
+                    <strong>{{i.text}}</strong>
+                </div>
 
+            {% endfor %}
+        {% endif %}
+    {% else %}
+    {% endif %}
 
     <body>
 

@@ -23,6 +23,8 @@ INSTALLED_APPS = [
     'pages',
     'users',
     'crispy_forms',
+    'easy_pdf',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -31,7 +33,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-CRISPY_TEMPLATE_PACK='bootstrap4'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -135,3 +138,13 @@ LOGIN_URL='login'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 # django_heroku.settings(locals())
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'sharmashankfab@gmail.com'
+EMAIL_HOST_PASSWORD = 'opwarcvvrxdnukpr'
+EMAIL_PORT = 587
+APPLICATION_EMAIL = 'Admin<sharmashankfab@gmail.com>'
+DEFAULT_FROM_EMAIL = 'Admin<sharmashankfab@gmail.com>'

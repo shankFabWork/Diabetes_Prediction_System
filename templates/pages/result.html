@@ -19,6 +19,7 @@
             <div class="table-1">
               <table>
                 <tbody>
+
                   <tr>
                     <th><h1>Parameters</h1></th>
                     <th><h1>Value</h1></th>
@@ -81,6 +82,12 @@
                         <a href="https://www.webmd.com/diabetes/taking-care-your-diabetes-every-day" target="blank">Click Here</a>
                       </td>  
                     {% else %}
+                    <td data-th="Element" style="background-color:green;color:black;">
+                     Congratulation you are Diabetes free 
+                    </td> 
+                    <td>
+                      <a href="{% url 'recent_results' %}">Recent Results</a>
+                    </td>  
                     {% endif %}
                 </tr>
 

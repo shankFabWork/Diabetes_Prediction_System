@@ -23,6 +23,7 @@ git branch -M main
 git remote add origin https://github.com/shankFabWork/Diabetes_Prediction_System.git
 git push -u origin main
 
+git remote set-url origin https://github.com/shankFabWork/Diabetes_Prediction_System.git
 
 Go to "Settings / Developer settings / Personal access tokens"
 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
