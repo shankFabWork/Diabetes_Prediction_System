@@ -20,10 +20,7 @@ DEBUG = True
 # Application definition
 
 INSTALLED_APPS = [
-    'pages',
-    'users',
-    'crispy_forms',
-    'easy_pdf',
+
     
     'django.contrib.admin',
     'django.contrib.auth',
@@ -31,6 +28,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'pages',
+    'users',
+    'crispy_forms',
+    'easy_pdf',
 ]
 
 
